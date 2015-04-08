@@ -1,0 +1,7 @@
+        BufferedReader reader = new BufferedReader(
+                    new FileReader("data"));
+        String Line=reader.readLine();
+        String firstlist =Line;
+        reader.close();
+        System.out.println(firstlist);
+

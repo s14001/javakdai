@@ -1,0 +1,8 @@
+/*
+           for(int u=3 ;u<Elm.size()-1;u+=3) {
+             int  Intstack=Integer.parseInt(Elm.get(u+2));
+             Item item=new Item(Elm.get(u),Elm.get(u+1),Intstack);
+             item.setStack(Intstack+3);
+             System.out.println(item.getStack());
+         }
+*/

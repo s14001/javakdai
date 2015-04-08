@@ -1,0 +1,22 @@
+         try {
+            FileWriter fw = new FileWriter("data");
+            for (int out=0; out<i; out++){
+                for (int in=0; in<size; in++) {
+                   if (out == (gyo)){
+                    continue;
+                    }
+                    fw.write(doubleary[out][in]+" ");
+                }
+                if (out == (gyo)) {
+                     continue;
+                }
+                fw.write("\r\n");
+            }
+            for (int ins=0;ins<Row.size();ins++){
+              fw.write(Row.get(ins)+"\r\n");
+            }
+            fw.close();
+         } catch(Exception e) {
+               System.out.println("書き込めませんでした");
+         }
+

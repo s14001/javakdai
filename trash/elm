@@ -1,0 +1,2 @@
+        System.out.println(readFromFile(
+        "./data"));

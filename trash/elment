@@ -1,0 +1,51 @@
+        public static List<Item> fileRead(String filename) {
+            List<String[]> elm =new ArrayList<>();
+            List<Item> col =new ArrayList<>();
+
+            File file =new File(filename);
+
+            FileReader fr =null;
+            BufferedReader br =null;
+            try {
+
+                fr = new FileReader(file);
+                br = new BufferedReader(fr);
+                String Line;
+                int i=0;//行数
+                while ((Line=br.readLine())!=null) {
+                    String[] ary=Line.split(" ");
+                    elm.add(ary);
+
+                    for (int u=1 ;u<elm.size();u++) {
+                       int num =Integer.parseInt(elm.get(u)[2]);
+                       col.add(new Item(elm.get(u)[0],elm.get(u)[1],num));
+                       i++;
+                    }
+
+                }
+
+            } catch (FileNotFoundException e){
+
+            } catch (IOException e) {
+                return null;
+            } finally {
+                closeSilentry(br);
+                closeSilentry(fr);
+            }
+
+              return col;
+        }
+
+        private static void closeSilentry(AutoCloseable target) {
+            if (target !=null) {
+                try {
+                    target.close();
+
+                } catch (Exception e) {}
+
+            }
+
+        }
+
+    }
+

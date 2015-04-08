@@ -1,0 +1,53 @@
+/*i
+        //    System.out.println( i\n"+Main ead.readFromFile( "./data"));
+
+             //System.out.println(col.get(0).getStack()); col.get(0).setStack(2); System.out.println(col.get(0).getStack());
+
+
+  
+  
+  BufferedReader reader = new BufferedReader(
+                    new FileReader("data"));
+        String Line=reader.readLine();
+        String firstlist =Line;
+        reader.close();
+        System.out.println(firstlist);
+
+    List<String[]> elm =new ArrayList<>();
+        List<Item> col =new ArrayList<>();
+
+
+        Scanner stdin =new Scanner(System.in);
+
+        BufferedReader reader = new BufferedReader(
+        new FileReader("data"));
+        BufferedReader br = new BufferedReader(
+        new InputStreamReader(System.in));
+
+
+
+
+
+
+
+  BufferedReader reader = new BufferedReader(
+        new FileReader(file));
+
+
+  BufferedReader br = new BufferedReader(
+        new InputStreamReader(System.in));
+
+
+  System.out.println(col.get(1).getStack());
+     //追加
+        System.out.print("商品を追加しますか yes or no ");
+        String  anser = br.readLine();
+        while (anser.equals("yes")) {
+             String pants = br.readLine();
+             String color = br.readLine();
+              int  stack = stdin.nextInt();
+             col.add(new Item(pants,color,stack));
+             anser =br.readLine();
+        }
+
+*/
